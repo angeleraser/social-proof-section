@@ -9,7 +9,7 @@
   display: flex;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 24px;
+  padding: 68px 22px;
   min-width: 360px;
   background-image: url("../images/bg-pattern-top-desktop.svg"),
     url("../images/bg-pattern-bottom-desktop.svg");

@@ -1,0 +1,18 @@
+@import url("./reset.min.css");
+@import url("./variables.css");
+@import url("./rating-banner.css");
+@import url("./proof-card.css");
+@import url("./proof-section.css");
+
+#app {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 24px;
+  min-width: 360px;
+  background-image: url("../images/bg-pattern-top-desktop.svg"),
+    url("../images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+}

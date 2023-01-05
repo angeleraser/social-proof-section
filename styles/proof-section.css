@@ -1,0 +1,90 @@
+.proof-section,
+.section-presentation,
+.proof-rating-banners,
+.proof-cards-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proof-section {
+  font-size: var(--base-fs);
+  font-family: var(--font-league);
+  gap: 46px;
+  width: 100%;
+  max-width: 1114px;
+  margin: auto;
+}
+
+.section-presentation {
+  text-align: center;
+}
+
+.section-title {
+  color: var(--dark-magenta);
+  font-weight: 700;
+  font-size: 2.4em;
+  max-width: 230px;
+  margin-bottom: 12px;
+}
+
+.section-caption {
+  color: var(--dark-grayish-magenta);
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+.section-presentation,
+.proof-rating-banners,
+.proof-cards-grid {
+  width: 100%;
+  gap: 16px;
+  max-width: 420px;
+}
+
+@media screen and (min-width: 1140px) {
+  .proof-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+  }
+
+  .proof-cards-grid,
+  .proof-rating-banners,
+  .section-presentation {
+    max-width: initial;
+    align-items: flex-start;
+  }
+
+  .proof-cards-grid {
+    grid-column: span 2;
+    flex-direction: row;
+    gap: 36px;
+  }
+
+  .section-presentation {
+    text-align: left;
+    max-width: 420px;
+  }
+
+  .section-title {
+    font-size: 3.5em;
+    max-width: initial;
+  }
+
+  .proof-cards-grid .proof-card:nth-child(2) {
+    margin-top: 16px;
+  }
+
+  .proof-cards-grid .proof-card:nth-child(3) {
+    margin-top: 32px;
+  }
+
+  .proof-rating-banners .rating-banner:nth-child(2) {
+    margin-left: 44px;
+  }
+
+  .proof-rating-banners .rating-banner:nth-child(3) {
+    margin-left: 88px;
+  }
+}

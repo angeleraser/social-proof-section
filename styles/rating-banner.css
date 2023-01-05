@@ -1,0 +1,43 @@
+.rating-banner {
+  align-items: center;
+  background-color: var(--light-grayish-magenta);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-league);
+  font-size: var(--base-fs);
+  font-weight: 700;
+  gap: 14px;
+  max-width: 440px;
+  padding: 14px;
+  width: 100%;
+}
+
+.rating-banner-stars {
+  display: flex;
+  gap: 8px;
+}
+
+.rating-banner p {
+  color: var(--dark-magenta);
+}
+
+.rating-banner .icon-star {
+  color: var(--dark-grayish-magenta);
+}
+
+.rating-banner .icon-star-filled {
+  color: var(--yellow);
+}
+
+.rating-banner .icon-star svg {
+  fill: currentColor;
+}
+
+@media screen and (min-width: 1140px) {
+  .rating-banner {
+    flex-direction: row;
+    padding: 22px 30px;
+    gap: 32px;
+  }
+}
